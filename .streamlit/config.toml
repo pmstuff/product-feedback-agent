@@ -1,0 +1,11 @@
+# .streamlit/config.toml
+# Arco Design System — native Streamlit theme
+# This sets the base palette for components that can't be overridden via CSS
+# (progress bars, sliders, color pickers, st.spinner accent).
+
+[theme]
+primaryColor      = "#165DFF"   # arco primary-6 — brand blue
+backgroundColor   = "#F2F3F5"   # arco bg-3 — page background
+secondaryBackgroundColor = "#FFFFFF"  # arco bg-1 — sidebar / card background
+textColor         = "#1D2129"   # arco text-1 — primary text
+font              = "sans serif"

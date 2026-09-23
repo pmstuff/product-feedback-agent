@@ -46,6 +46,12 @@ reports/
 *.bak
 *.swp
 
+# ─── Agent telemetry (generated at runtime) ───────────────────────────────────
+data/runs.jsonl
+
+# ─── Eval results (generated at runtime, baseline kept manually) ──────────────
+evals/results_*.json
+
 # ─── Streamlit ────────────────────────────────────────────────────────────────
 .streamlit/secrets.toml
 

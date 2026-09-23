@@ -1,0 +1,116 @@
+/*
+ * design/arco.css — Arco Design System CSS reference
+ *
+ * Source:  https://arco.design/react/docs/token
+ * Figma:   https://www.figma.com/design/A9S0ExZuQvdET2wnbqRNyq/Arco-Design-System--Community-
+ *
+ * This file is the CANONICAL reference. The actual injected CSS lives in
+ * design/streamlit_css.py as a Python string, adapted for Streamlit's
+ * selector structure. Keep both in sync when making changes.
+ *
+ * CSS custom properties follow the --arco-* naming convention.
+ */
+
+:root {
+  /* ── Primary ── */
+  --arco-color-primary-1: #E8F3FF;
+  --arco-color-primary-2: #BEDAFF;
+  --arco-color-primary-3: #94BFFF;
+  --arco-color-primary-4: #6AA1FF;
+  --arco-color-primary-5: #4080FF;
+  --arco-color-primary-6: #165DFF;   /* brand blue */
+  --arco-color-primary-7: #0E42D2;
+  --arco-color-primary-8: #072CA6;
+  --arco-color-primary-9: #031A79;
+  --arco-color-primary-10: #000D4D;
+
+  /* ── Text ── */
+  --arco-color-text-1: #1D2129;
+  --arco-color-text-2: #4E5969;
+  --arco-color-text-3: #86909C;
+  --arco-color-text-4: #C9CDD4;
+
+  /* ── Border ── */
+  --arco-color-border-1: #F2F3F5;
+  --arco-color-border-2: #E5E6EB;
+  --arco-color-border-3: #C9CDD4;
+  --arco-color-border-4: #86909C;
+
+  /* ── Background / Fill ── */
+  --arco-color-bg-1: #FFFFFF;
+  --arco-color-bg-2: #F7F8FA;
+  --arco-color-bg-3: #F2F3F5;
+  --arco-color-bg-4: #E5E6EB;
+
+  /* ── Semantic ── */
+  --arco-color-success-6: #00B42A;
+  --arco-color-success-1: #E8FFEA;
+  --arco-color-warning-6: #FF7D00;
+  --arco-color-warning-1: #FFF7E8;
+  --arco-color-danger-6:  #F53F3F;
+  --arco-color-danger-1:  #FFECE8;
+
+  /* ── Typography ── */
+  --arco-font-family:  -apple-system, BlinkMacSystemFont, "PingFang SC",
+                       "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --arco-font-size-body-1: 12px;
+  --arco-font-size-body-2: 13px;
+  --arco-font-size-body-3: 14px;
+  --arco-font-size-title-1: 16px;
+  --arco-font-size-title-2: 20px;
+  --arco-font-size-title-3: 24px;
+  --arco-line-height-base: 1.5715;
+
+  /* ── Radius ── */
+  --arco-border-radius-small:  2px;
+  --arco-border-radius-medium: 4px;
+  --arco-border-radius-large:  8px;
+  --arco-border-radius-xlarge: 16px;
+
+  /* ── Shadow ── */
+  --arco-shadow-1: 0 1px 2px rgba(0,0,0,0.05);
+  --arco-shadow-2: 0 2px 5px rgba(0,0,0,0.08), 0 0 2px rgba(0,0,0,0.05);
+  --arco-shadow-3: 0 4px 10px rgba(0,0,0,0.10), 0 0 2px rgba(0,0,0,0.05);
+
+  /* ── Transition ── */
+  --arco-transition-base: all 0.1s cubic-bezier(0, 0, 1, 1);
+}
+
+/* ── Component examples (reference only) ── */
+
+.arco-btn-primary {
+  background-color: var(--arco-color-primary-6);
+  border-color:     var(--arco-color-primary-6);
+  border-radius:    var(--arco-border-radius-medium);
+  font-size:        var(--arco-font-size-body-3);
+  font-weight:      500;
+  height:           32px;
+  padding:          0 16px;
+  transition:       var(--arco-transition-base);
+}
+
+.arco-btn-primary:hover {
+  background-color: var(--arco-color-primary-5);
+  border-color:     var(--arco-color-primary-5);
+}
+
+.arco-card {
+  background:    var(--arco-color-bg-1);
+  border:        1px solid var(--arco-color-border-2);
+  border-radius: var(--arco-border-radius-large);
+  box-shadow:    var(--arco-shadow-2);
+  padding:       20px 24px;
+}
+
+.arco-input {
+  border:        1px solid var(--arco-color-border-2);
+  border-radius: var(--arco-border-radius-medium);
+  font-size:     var(--arco-font-size-body-3);
+  height:        32px;
+  padding:       4px 12px;
+}
+
+.arco-input:focus {
+  border-color: var(--arco-color-primary-6);
+  box-shadow:   0 0 0 2px rgba(22, 93, 255, 0.2);
+}
